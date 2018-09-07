@@ -1,0 +1,43 @@
+user: user1arq1
+password: user1arq1
+plan: moduloSeguridad
+webapp: WebAppModuloSeguridad
+https://user1arq1@webappmoduloseguridad.scm.azurewebsites.net/WebAppModuloSeguridad.git
+
+https://user1arq1@apisecurityarq1.scm.azurewebsites.net/apisecurityarq1.git
+Resource Group -> groupSecurity
+az webapp deployment user set --user-name user1arq1 --password user1ARQ1
+az appservice plan create --name planSecurity --resource-group groupSecurity --sku FREE
+az webapp create --resource-group groupSecurity --plan planSecurity --name apisecurityarq1 --runtime "NODE|6.9" --deployment-local-git
+
+arqui1db-2018
+Primary masterkey
+"jY4INnddURHmEEJDL05qGHEYGZVQgGvf4EmomytTCqhf3wsxhuxbUPN9CJAzkJWyKvt9MLrfx1TOdxOwhNT1Xw=="
+
+https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app
+
+https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-rest-api
+
+https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app
+
+https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb-samples  //Insert data to Azure cosmos db
+
+https://docs.microsoft.com/en-us/azure/cosmos-db/create-mongodb-nodejs?view=azure-node-latest
+
+https://docs.microsoft.com/en-us/azure/app-service/app-service-web-get-started-nodejs
+
+https://docs.microsoft.com/en-us/azure/cosmos-db/connect-mongodb-account
+
+https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-nodejs-application
+
+WEBPAGES USED 
+https://github.com/Automattic/mongoose/issues/6759 ( I assume the error was due to the connection beeing closed by Mlab.)
+https://www.hacksparrow.com/post-get-request-handling-in-node-js-express.html
+https://docs.mongodb.com/manual/reference/method/db.collection.findOneAndUpdate/
+https://stackoverflow.com/questions/47656515/updateone-on-mongodb-not-working-in-node-js
+https://www.pabbly.com/tutorials/node-js-mongodb-update-into-database/ (update into Azure cosmos db)
+https://www.w3schools.com/nodejs/nodejs_mongodb_update.asp
+https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters
+https://medium.com/@manojsinghnegi/sending-an-email-using-nodemailer-gmail-7cfa0712a799 (send email nodejs)
+https://codeburst.io/hitchhikers-guide-to-back-end-development-with-examples-3f97c70e0073
+https://thecodebarbarian.com/a-node-js-perspective-on-mongodb-4-transactions.html
